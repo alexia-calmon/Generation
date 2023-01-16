@@ -1,0 +1,64 @@
+programa {
+  funcao inicio() {
+  cadeia tipoAnimal, classeAnimal, tipoAlimentacao
+
+  escreva("O animal é vertebrado ou invertebrado? ")
+  leia(tipoAnimal)
+
+  se ((tipoAnimal == "vertebrado") ou (tipoAnimal == "VERTEBRADO")) {
+    escreva("O animal é uma ave ou um mamífero? ")
+    leia(classeAnimal)
+
+    se ((classeAnimal == "ave") ou (tipoAnimal == "AVE")) {
+      escreva ("O animal é carnívoro ou onívoro? ")
+      leia(tipoAlimentacao)
+
+      se ((tipoAlimentacao == "carnívoro") ou (tipoAlimentacao == "CARNÍVORO")){
+        escreva ("Águia")
+      }
+      senao se ((tipoAlimentacao == "onívoro") ou (tipoAlimentacao == "ONÍVORO")) {
+        escreva("Pomba")
+      }
+    }
+    senao se ((classeAnimal == "mamífero") ou (classeAnimal == "MAMÍFERO")) {
+    escreva("O animal é onívoro ou herbívoro? ")
+    leia(tipoAlimentacao)
+
+    se ((tipoAlimentacao == "onívoro") ou (tipoAlimentacao == "ONÍVORO")){
+        escreva ("Homem")
+      }
+      senao se ((tipoAlimentacao == "herbívoro") ou (tipoAlimentacao == "HERBÍVORO")) {
+        escreva("Vaca") }
+      }
+
+    }
+    senao se ((tipoAnimal == "invertebrado") ou (tipoAnimal == "INVERTEBRADO")) {
+      escreva("O animal é um inseto ou um anelídeo? ")
+      leia (classeAnimal)
+
+      se ((classeAnimal == "inseto") ou (tipoAnimal == "INSETO")) {
+      escreva ("O animal é hematófago ou herbívoro? ")
+      leia(tipoAlimentacao)
+
+      se ((tipoAlimentacao == "hematófago") ou (tipoAlimentacao == "HEMATÓFAGO")){
+        escreva ("Pulga")
+      }
+      senao se ((tipoAlimentacao == "herbívoro") ou (tipoAlimentacao == "HERBÍVORO")) {
+        escreva("Lagarta")
+      }
+    }
+    senao se ((classeAnimal == "anelídeo") ou (classeAnimal == "ANELÍDEO")) {
+    escreva("O animal é hematófago ou onívoro? ")
+    leia(tipoAlimentacao)
+
+    se ((tipoAlimentacao == "hematófago") ou (tipoAlimentacao == "HEMATÓFAGO")){
+        escreva ("Sanguessuga")
+      }
+      senao se ((tipoAlimentacao == "onívoro") ou (tipoAlimentacao == "ONÍVORO")) {
+        escreva("Minhoca")
+      }
+
+    }
+  }
+  }
+}
