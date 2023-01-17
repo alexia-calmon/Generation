@@ -1,4 +1,4 @@
-// CLIENTE
+/* // CLIENTE
 package Cadastros.model;
 
 import java.util.Scanner;
@@ -330,5 +330,5 @@ package Cadastros.model;
             }
         }
 
-
+*/
 
